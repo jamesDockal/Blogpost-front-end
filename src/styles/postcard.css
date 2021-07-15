@@ -1,0 +1,80 @@
+.post-card {
+  background-color: rgba(123, 44, 191, 1);
+  height: 300px;
+  border-radius: 16px;
+  /* width: 18.5vw; */
+  padding: 0 16px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 1px solid #5a189a;
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.post-card:hover {
+  transform: scale(1.05);
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  /* background-color: red; */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* max-width: 25vw; */
+  max-width: 20vw;
+}
+
+p {
+  font-size: 20px;
+  color: #f8f8f8;
+  line-height: 25px;
+  font-weight: 300;
+  font-family: "Poppins";
+  /* background-color: red; */
+  max-height: 150px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.createdby {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  width: 90%;
+  color: white;
+  /* background-color: red; */
+
+  position: absolute;
+  bottom: 5%;
+  left: 2.5%;
+}
+
+.createdbyspan {
+  color: white;
+  font-size: 18px;
+}
+.post-wrapper {
+  position: relative;
+}
+
+.delete-post {
+  color: white;
+  position: absolute;
+  transition: 0.3s;
+  right: 5%;
+  bottom: 8%;
+  cursor: pointer;
+}
+
+.link-post:hover ~ .delete-post {
+  transform: scale(1.2);
+}
+.delete-post:hover {
+  transform: scale(1.5);
+}

@@ -1,0 +1,9 @@
+.posts {
+  max-width: 90vw;
+  margin-top: 32px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 16px;
+  row-gap: 32px;
+}

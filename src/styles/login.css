@@ -1,0 +1,137 @@
+.form-disabled {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.form-actived {
+  opacity: 1;
+  visibility: visible;
+}
+
+.login-form {
+  transition: 0.3s;
+  z-index: 999;
+  width: 400px;
+  height: 500px;
+  background-color: #f8f8f8;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 16px; */
+
+  box-shadow: rgb(33, 33, 33) 0px 20px 30px -10px;
+  border-radius: 32px;
+
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-title {
+  color: #240046;
+  font-family: "Poppins";
+  letter-spacing: 4px;
+  font-size: 64px;
+}
+
+.container-email-login {
+  position: relative;
+}
+
+.container-password-login {
+  margin-top: 32px;
+
+  position: relative;
+}
+
+.login-input {
+  height: 25px;
+  width: 300px;
+  border: none;
+  background-color: #5a189a;
+  border-radius: 32px;
+  padding: 16px 24px;
+  outline: none;
+  color: white;
+  font-size: 24px;
+  box-shadow: rgb(33, 33, 33) 0px 20px 30px -10px;
+  font-weight: 300;
+  transition: 0.3s;
+}
+
+.label-login {
+  position: absolute;
+  color: white;
+  left: 7%;
+  font-size: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: 0.3s;
+  font-weight: 300;
+}
+
+.login-form .input-email:valid,
+.login-form .input-email:focus {
+  background-color: #240046;
+}
+
+.login-form .input-password:valid,
+.login-form .input-password:focus {
+  background-color: #240046;
+}
+
+.login-form .input-email:valid ~ .label-email,
+.login-form .input-email:focus ~ .label-email {
+  transform: translateY(-55px);
+  font-size: 20px;
+  color: #3c096c;
+  font-weight: 500;
+}
+
+.login-form .input-password:valid ~ .label-password,
+.login-form .input-password:focus ~ .label-password {
+  transform: translateY(-55px);
+  font-size: 20px;
+  color: #3c096c;
+  font-weight: 500;
+}
+
+.button-login {
+  border: none;
+  transition: 0.3s;
+  height: 60px;
+  width: 330px;
+
+  letter-spacing: 8px;
+  font: 900 20px "Poppins";
+  cursor: pointer;
+
+  border-radius: 16px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  color: #3c096c;
+  background-color: #c9184a;
+  transition: 0.3s;
+
+  position: absolute;
+  bottom: 10%;
+}
+.button-login:hover {
+  filter: opacity(0.9);
+}
+
+.button-login:disabled {
+  background-color: #ff4d6d;
+  color: #757179;
+}
+.errox-box {
+  margin-top: 16px;
+  height: 20px;
+}
+
+.error-message {
+  color: red;
+  font-size: 20px;
+}

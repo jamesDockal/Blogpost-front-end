@@ -1,0 +1,64 @@
+.actions-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.action-button {
+  background-color: transparent;
+  transition: 0.3s;
+  height: 60px;
+  width: 120px;
+
+  color: white;
+  font: 500 20px "Poppins";
+  cursor: pointer;
+
+  border: 3px solid #9d4edd;
+  border-radius: 16px;
+  box-shadow: rgb(33, 33, 33) 0px 20px 30px -10px;
+}
+
+.action-button:hover {
+  border: 3px solid white;
+  background-color: #c9184a;
+  color: white;
+  box-shadow: rgb(200, 200, 200) 0px 20px 30px -10px;
+}
+
+.create-post-link {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.create-post-link:hover {
+  color: #c9184a;
+}
+
+.user-username {
+  color: lightgray;
+}
+
+.create-post-button {
+  background-color: #c9184a;
+
+  transition: 0.3s;
+  height: 60px;
+  /* width: 120px; */
+
+  color: white;
+  font: 500 20px "Poppins";
+  cursor: pointer;
+
+  border: 3px solid white;
+  border-radius: 16px;
+  box-shadow: rgb(33, 33, 33) 0px 20px 30px -10px;
+}
+
+.create-post-button:hover {
+  background-color: transparent;
+
+  box-shadow: rgb(200, 200, 200) 0px 20px 30px -10px;
+}
