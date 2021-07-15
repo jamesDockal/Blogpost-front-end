@@ -8,7 +8,7 @@ import "./styles/app.css";
 function App() {
   return (
     <div className="app">
-      <BrowserRouter>
+      <BrowserRouter basename={window.location.pathname || ""}>
         <Route path="/" exact component={Home} />
         <Route path="/post/:slug" exact component={Post} />
       </BrowserRouter>
